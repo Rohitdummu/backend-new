@@ -21,10 +21,10 @@ io.on('connection',(socket)=>{
     //  setTimeout(()=>{socket.send("check out our offers ! ending soon ... ")},5000)
     let tm = new Date()
     setInterval(()=>{
-        socket.emit("likki",{msg:"iloveulikki",loveu:tm.getSeconds()})
+        socket.emit("test",{msg:"test",param:tm.getSeconds()})
     },1000)
    
-    socket.on("likkinadumu",(data)=>{
+    socket.on("eventnsme",(data)=>{
         console.log(data)
     })
 })
