@@ -15,10 +15,10 @@
         socket.on('message',(data)=>{
             console.log(data)
         })
-        socket.on("likki",(data)=>{
+        socket.on("test",(data)=>{
             console.log(data)
         })
-        socket.emit("likkinadumu",{msg:"iloveulikki nade"})
+        socket.emit("eventname",{msg:"test me"})
     </script>
 </body>
 </html>
